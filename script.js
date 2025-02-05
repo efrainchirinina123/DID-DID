@@ -32,13 +32,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -60,13 +60,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -77,13 +77,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRasdadsN',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -94,13 +94,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRasdadsN',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -111,13 +111,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRasdadsN',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -128,13 +128,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRasdadsN',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -145,13 +145,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRasdadsN',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -162,13 +162,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRasdadsN',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -179,13 +179,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRasdadsN',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -196,13 +196,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRasdadsN',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -213,13 +213,13 @@ const courses = [
                 videos: [
                     {
                         title: 'INTRODUCION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -230,13 +230,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESE',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -259,13 +259,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -288,13 +288,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -317,13 +317,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -346,13 +346,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -375,13 +375,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -404,13 +404,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -433,13 +433,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -462,13 +462,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -491,13 +491,13 @@ const courses = [
                 videos: [
                     {
                         title: 'PRESENTACION',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?html'
                     },
                     {
                         title: 'CLASE 1',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?css'
                     }
@@ -520,7 +520,7 @@ const courses = [
                 videos: [
                     {
                         title: 'Introducción a ML',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?ai'
                     }
@@ -542,7 +542,7 @@ const courses = [
                 videos: [
                     {
                         title: 'Introducción a ML',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?ai'
                     }
@@ -565,7 +565,7 @@ const courses = [
                 videos: [
                     {
                         title: 'Introducción a ML',
-                        url: 'https://drive.google.com/drive/folders/1NtRm1VQ5WBnROhIEQIdT8nlEXpKvJtgW?usp=drive_link',
+                        url: 'https://drive.google.com/file/d/105UuTYbITzJtIwCloaeWFVFGjRqKhpf-/view?usp=drive_link',
                         duration: 'Ver',
                         thumbnail: 'https://source.unsplash.com/random/400x300?ai'
                     }
