@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Autenticación -->
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2 style="text-align: center; margin-bottom: 25px; color: var(--primary);">Bienvenido a EduCA</h2>
+            <form id="loginForm">
+                <div class="auth-form">
+                    <input type="text" id="username" placeholder="Nombre de usuario" required>
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                    <button type="submit">Acceder a la Plataforma</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <!-- Barra Superior -->
+        <div class="nav-bar">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                EduCA
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar cursos...">
+            </div>
+            <div class="user-menu">
+                <span id="usernameDisplay" style="margin-right: 20px;">Usuario</span>
+                <div class="logout-btn" onclick="logout()">Cerrar Sesión</div>
+            </div>
+        </div>
+        
+        <style>
+            /* Diseño general de la barra de navegación */
+            .nav-bar {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                z-index: 100;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+        
+            .nav-bar:hover {
+                transform: translateY(-5px);
+            }
+        
+            /* Logo */
+            .logo {
+                font-size: 18px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                color: #333;
+                transition: color 0.3s ease;
+            }
+        
+            .logo:hover {
+                color: #4CAF50;
+            }
+        
+            .logo i {
+                margin-right: 8px;
+            }
+        
+            /* Barra de búsqueda */
+            .search-bar input {
+                padding: 8px;
+                border-radius: 5px;
+                border: 2px solid #ddd;
+                font-size: 16px;
+                width: 200px;
+                transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            }
+        
+            .search-bar input:focus {
+                border-color: #4CAF50;
+                box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+                outline: none;
+            }
+        
+            /* Menú de usuario */
+            .user-menu {
+                display: flex;
+                align-items: center;
+                transition: opacity 0.3s ease;
+            }
+        
+            .user-menu:hover {
+                opacity: 0.8;
+            }
+        
+            #usernameDisplay {
+                font-size: 16px;
+                margin-right: 20px;
+                color: #333;
+            }
+        
+            .logout-btn {
+                padding: 8px 16px;
+                background-color: transparent;
+                border: 2px solid #f44336;
+                border-radius: 5px;
+                color: #f44336;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+        
+            .logout-btn:hover {
+                background-color: #f44336;
+                color: white;
+            }
+        
+            /* Estilo para dispositivos móviles */
+            @media screen and (max-width: 600px) {
+                .nav-bar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+        
+                .search-bar input {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+        </style>
+        
+
+        <!-- Cursos -->
+        <div class="courses-grid" id="coursesContainer"></div>
+    </div>
+
+    <!-- Modal de Curso -->
+    <div class="course-modal" id="courseModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCourseModal()">&times;</span>
+            <div class="modal-sidebar" id="courseModules"></div>
+            <div class="modal-main" id="courseVideos"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
