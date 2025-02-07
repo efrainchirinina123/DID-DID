@@ -25,7 +25,7 @@ const CONFIG = {
          { username: "user2", password: "user456", name: "Usuario Premium" },
          { username: "user3", password: "user789", name: "Usuario Premium" },
          { username: "user3", password: "user0", name: "Usuario Premium" },
-        { username: "echirininae", password: "13071262", name: "Usuario Estándar" }
+        { username: "echirinina", password: "13071262", name: "Usuario Estándar" }
     ],
     courses: [
         {
