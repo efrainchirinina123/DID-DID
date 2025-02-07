@@ -1,0 +1,372 @@
+
+        :root {
+            --primary: #6366f1;
+            --secondary: #4f46e5;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --premium: #eab308;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: var(--light);
+        }
+
+        /* Login Estilizado */
+        .auth-container {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: var(--gradient);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .auth-container::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1));
+            transform: rotate(45deg);
+            animation: backgroundFlow 20s linear infinite;
+        }
+
+        @keyframes backgroundFlow {
+            0% { transform: rotate(45deg) translateX(-50%); }
+            100% { transform: rotate(45deg) translateX(50%); }
+        }
+
+        .auth-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 450px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .auth-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            margin: 0.75rem 0;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        /* Dashboard Mejorado */
+        .dashboard {
+            display: none;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem 0;
+        }
+
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 1rem;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-header {
+            position: relative;
+            height: 95px;
+            background: var(--gradient);
+        }
+
+        .course-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .course-content {
+            padding: 1.5rem;
+        }
+
+        .course-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--dark);
+            color: white;
+        }
+
+        /* Vista de Módulos */
+        .modules-view {
+            display: none;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .video-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .video-thumbnail {
+            height: 90px;
+            background: var(--gradient);
+            position: relative;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+       
+        .form-group {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-input {
+            width: 100%;
+            padding-right: 30px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            font-size: 22px;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-password:active {
+            transform: scale(0.9);
+        }
+
+        .progress-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .progress-bar {
+            height: 3px; /* Más delgada */
+            width: 50%;
+            background-color: rgb(255, 254, 254);
+            transition: width 0.6s ease-in-out, background-color 0.6s ease-in-out;
+            border-radius: 2px;
+            max-width: 80%; /* Centrando la barra */
+        }
+      
+        /* Contenedor principal con los iconos a la derecha */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+    
+        .form-container {
+            flex-grow: 1;
+            min-width: 300px;
+        }
+    
+        /* Íconos en vertical SIEMPRE en la derecha */
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            margin-left: 20px;
+        }
+    
+        /* Estilos de los iconos */
+        .icon-sede {
+            width: 50px;
+            height: 50px;
+            transition: filter 0.3s ease-in-out;
+        }
+    
+        /* Efecto blanco y negro al pasar el cursor */
+        .icon-sede:hover {
+            filter: grayscale(100%);
+        }
+    
+        /* RESPONSIVIDAD: En teléfonos sigue en la derecha */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: row; /* Mantiene la alineación en horizontal */
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+    
+            .icon-container {
+                align-items: flex-end; /* Asegura que siempre esté en la derecha */
+            }
+        }
+    
+        /* Contenedor de los iconos alineado a la derecha */
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            margin-left: 20px;
+        }
+    
+        /* Estilo de los íconos */
+        .icon-sede {
+            width: 50px;
+            height: 50px;
+            transition: filter 0.3s ease-in-out;
+        }
+    
+        /* Efecto blanco y negro al pasar el cursor */
+        .icon-sede:hover {
+            filter: grayscale(100%);
+        }
+    
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .icon-container {
+                align-items: center;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+    
+            .icon-sede {
+                width: 40px;
+                height: 40px;
+            }
+    
+            div[style*="display: flex; justify-content: space-between"] {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+   

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DI-DI </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Sistema de Autenticación -->
+    <div class="auth-container" id="authContainer">
+        <div class="auth-card fade-in">
+            <div class="container">
+                <!-- Contenedor del formulario -->
+                <div class="form-container">
+                    <h2 style="text-align: center; margin-bottom: 2rem; color: var(--dark);">Bienvenido</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Usuario" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" placeholder="Contraseña" id="password" required oninput="updateProgress()">
+                            <span class="toggle-password" onclick="togglePassword()">
+                                <i class="bx bx-low-vision" id="toggleIcon"></i>
+                            </span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div><br>
+                        <button type="submit" class="btn btn-primary">
+                            Ingresar
+                        </button>
+                    </form>
+                </div>
+            
+                <!-- Íconos (Siempre en la parte derecha en vertical) -->
+                <div class="icon-container">
+                    <a href="https://sede1.com" target="_blank">
+                        <img src="https://www.esam.edu.bo/img/logo_cca.png" alt="Sede 1" class="icon-sede">
+                    </a>
+                    <a href="https://sede2.com" target="_blank">
+                        <img src="https://www.esam.edu.bo/img/logo_ciberkids.png" alt="Sede 2" class="icon-sede">
+                    </a>
+                    <a href="https://sede3.com" target="_blank">
+                        <img src="https://www.esam.edu.bo/img/logo_cybercorp.png" alt="Sede 3" class="icon-sede">
+                    </a>
+                </div>
+            </div>
+                <div id="authError" style="color: var(--danger); text-align: center; margin-top: 1rem; display: none;">
+                    Credenciales incorrectas ❌
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard Principal -->
+    <div class="dashboard" id="dashboard">
+        <nav class="header-nav">
+            <div class="search-container">
+                <i class='bx bx-search search-icon'></i>
+                <input type="text" class="search-input" placeholder="Buscar cursos..." id="searchInput">
+            </div>
+            <button onclick="logout()" class="btn btn-secondary">
+                Cerrar Sesión <i class='bx bx-log-out'></i>
+            </button>
+        </nav>
+
+        <div class="courses-grid" id="coursesGrid"></div>
+    </div>
+
+    <!-- Vista de Módulos -->
+    <div class="modules-view" id="modulesView">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+            <button onclick="showDashboard()" class="btn btn-secondary">
+                <i class='bx bx-arrow-back'></i> Volver
+            </button>
+            <button class="btn btn-primary" id="viewFolderBtn">
+                <i class='bx bx-folder-open'></i> Ver Carpeta
+            </button>
+        </div>
+        <h1 id="courseTitle" style="margin-bottom: 2rem; color: var(--dark);"></h1>
+        <div class="video-grid" id="videoGrid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
