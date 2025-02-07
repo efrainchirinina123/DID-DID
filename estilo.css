@@ -50,26 +50,45 @@
         .auth-card {
             background: rgba(255, 255, 255, 0.95);
             padding: 2.5rem;
-            border-radius: 1.5rem;
+            border-radius: 9.5rem 1.5rem 2.0rem 2.0rem; /* Bordes más redondeados arriba */
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             width: 90%;
             max-width: 450px;
             position: relative;
             z-index: 1;
             transition: transform 0.3s ease;
+            
+            /* Agregar borde solo en la parte superior */
+            border-top: 7px solid #0c09e0; /* Puedes cambiar el color y el grosor */
+            
+            /* Animación de entrada desde los lados */
+            animation: slide-in 0.8s ease-out;
         }
-
+        
         .auth-card:hover {
             transform: translateY(-5px);
         }
+        
+        /* Definimos la animación */
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
 
         .form-input {
             width: 100%;
-            padding: 1rem;
+            padding: 10px;
             border: 2px solid #e2e8f0;
             border-radius: 0.75rem;
             margin: 0.75rem 0;
-            font-size: 1rem;
+            font-size: 12px;
             transition: all 0.3s ease;
         }
 
@@ -85,8 +104,8 @@
         .header-nav {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
+            align-items: end;
+            margin-bottom: 1rem;
             padding: 1rem 0;
         }
 
@@ -168,26 +187,45 @@
         }
 
         .btn {
-            padding: 0.75rem 1.5rem;
+            padding: 0.75rem 1.2rem;
             border: none;
             border-radius: 0.75rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease-in-out;
             display: flex;
             align-items: center;
             gap: 0.5rem;
             font-weight: 500;
+            position: relative;
+            overflow: hidden;
         }
-
+        
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            transform: skewX(-20deg);
+            transition: left 1s ease-in-out;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
         .btn-primary {
             background: var(--primary);
             color: white;
         }
-
+        
         .btn-secondary {
             background: var(--dark);
             color: white;
         }
+        
 
         /* Vista de Módulos */
         .modules-view {
@@ -307,8 +345,8 @@
     
         /* Estilos de los iconos */
         .icon-sede {
-            width: 50px;
-            height: 50px;
+            width: 35px;
+            height: 42px;
             transition: filter 0.3s ease-in-out;
         }
     
@@ -339,12 +377,14 @@
             margin-left: 20px;
         }
     
-        /* Estilo de los íconos */
         .icon-sede {
-            width: 50px;
-            height: 50px;
+            width: 35px;
+            height: 42px;
             transition: filter 0.3s ease-in-out;
+            margin-left: 10px;  /* Espacio en el lado izquierdo */
+            margin-right: 10px; /* Espacio en el lado derecho */
         }
+        
     
         /* Efecto blanco y negro al pasar el cursor */
         .icon-sede:hover {
