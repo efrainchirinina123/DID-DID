@@ -436,9 +436,13 @@ function loadCourses() {
                 <div class="course-actions">
                     <button class="btn btn-primary" onclick="showCourseDetails(${course.id})">
                         <i class='bx bx-play-circle'></i> Ver Curso
+                        </button>
+                    <button class="btn btn-secondary" onclick="window.open('${course.folder}', '_blank')">
+                        <i class='bx bx-folder'></i>Carpeta
                     </button>
-                    <button class="btn btn-secondary" onclick="window.open('${course.folder}', '_blank', 'width=2100,height=390,scrollbars=yes,left=screen.width-640,top=30')">
-                        <i class='bx bx-folder'></i> Carpeta
+                    <button style="border: none; background: none; cursor: pointer;" 
+                    onclick="window.open('${course.folder}', '_blank', 'width=2100,height=390,scrollbars=yes,left=screen.width-640,top=30')">
+                        <i class='bx bx-window-open' style="font-size: 24px; color: green;"></i>
                     </button>
 
                 </div>
@@ -488,8 +492,12 @@ function renderModules() {
                     <h4>${video.name}</h4>
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
                         <span style="color: #64748b;">${video.duration}</span>
-                        <button class="btn btn-primary" onclick="window.open('${video.url}', '_blank', 'width=630,height=410,scrollbars=yes,left=' + (screen.width - 650) + ',top=100')">
-                        <i class='bx bx-play'></i> Reproducir
+                        <button class="btn btn-primary" onclick="window.open('${video.url}', '_blank')">
+                            <i class='bx bx-play'></i> Ver
+                        </button>
+                        <button style="border: none; background: none; cursor: pointer;" 
+                             onclick="window.open('${video.url}', '_blank', 'width=630,height=410,scrollbars=yes,left=' + (screen.width - 650) + ',top=100')">
+                            <i class='bx bx-exit-fullscreen' style="font-size: 24px; color: darkblue;"></i>
                         </button>
 
                     </div>
