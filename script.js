@@ -442,7 +442,7 @@ function loadCourses() {
                     </button>
                     <button style="border: none; background: none; cursor: pointer;" 
                     onclick="window.open('${course.folder}', '_blank', 'width=2100,height=390,scrollbars=yes,left=screen.width-640,top=30')">
-                        <i class='bx bx-window-open' style="font-size: 24px; color: green;"></i>
+                        <i class='bx bx-folder-open' style="font-size: 24px; color: green;"></i>
                     </button>
 
                 </div>
