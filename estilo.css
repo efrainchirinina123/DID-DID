@@ -44,11 +44,10 @@
             0% { transform: rotate(45deg) translateX(-50%); }
             100% { transform: rotate(45deg) translateX(50%); }
         }
-
         .auth-card {
             background: rgba(255, 255, 255, 0.95);
             padding: 2.5rem;
-            border-radius: 9.5rem 1.5rem 2.0rem 2.0rem; /* Bordes más redondeados arriba */
+            border-radius: 9.5rem 1.5rem 2.0rem 2.0rem;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             width: 90%;
             max-width: 450px;
@@ -56,16 +55,20 @@
             z-index: 1;
             transition: transform 0.3s ease;
             
-            /* Agregar borde solo en la parte superior */
-            border-top: 7px solid #074ea7; /* Puedes cambiar el color y el grosor */
-
-            /* Animación de entrada desde los lados */
+            /* Borde solo en la parte superior */
+            border-top: 7px solid #0805bd;
+        
+            /* Animación */
             animation: slide-in 9.8s ease-out;
+        
+            /* Degradado de máscara: de opaco a transparente en la parte inferior */
+            -webkit-mask-image: linear-gradient(to bottom, black 72%, transparent 98%);
+                    mask-image: linear-gradient(to bottom, black 72%, transparent 98%);
         }
         
-        .auth-card:hover {
+        /* .auth-card:hover {
             transform: translateY(-5px);
-        }
+        } */
         
         /* Definimos la animación */
         @keyframes slide-in {
