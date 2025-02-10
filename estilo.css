@@ -56,7 +56,7 @@
             transition: transform 0.3s ease;
             
             /* Borde solo en la parte superior */
-            border-top: 7px solid #0805bd;
+            border-top: 5px solid #0805bd;
         
             /* Animación */
             animation: slide-in 9.8s ease-out;
