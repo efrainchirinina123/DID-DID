@@ -227,13 +227,7 @@ function loadCourses() {
                     <button class="btn btn-primary" onclick="showCourseDetails(${course.id})">
                         <i class='bx bx-play-circle'></i> Ver Curso
                     </button>
-                    <button class="btn btn-secondary" onclick="window.open('${course.folder}', '_blank')">
-                        <i class='bx bx-folder'></i> Carpeta
-                    </button>
-                    <button style="border: none; background: none; cursor: pointer;" 
-                        onclick="window.open('${course.folder}', '_blank', 'width=2100,height=390,scrollbars=yes,left=screen.width-640,top=30')">
-                        <i class='bx bx-folder-open' style="font-size: 24px; color: rgb(5, 241, 143);"></i>
-                    </button>
+                    
                 </div>
             </div>
         `;
@@ -327,4 +321,3 @@ function renderModules() {
         document.getElementById('authContainer').style.display = 'none';
         document.getElementById('dashboard').style.display = 'block';
     }
-
