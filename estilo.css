@@ -1,0 +1,591 @@
+        :root {
+            --primary: #6366f1;
+            --secondary: #4f46e5;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #04473e;
+            --premium: #eab308;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: var(--light);
+        }
+        /* Login Estilizado */
+        .auth-container {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background:#afbfeb;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .auth-container::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1));
+            transform: rotate(45deg);
+            animation: backgroundFlow 20s linear infinite;
+        }
+
+        @keyframes backgroundFlow {
+            0% { transform: rotate(45deg) translateX(-50%); }
+            100% { transform: rotate(45deg) translateX(50%); }
+        }
+        .auth-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2.5rem;
+            border-radius: 9.5rem 1.5rem 2.0rem 2.0rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 450px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s ease;
+            
+            /* Borde solo en la parte superior */
+            border-top: 5px solid #575fe7;
+        
+            /* Animación */
+            animation: slide-in 9.8s ease-out;
+        
+            /* Degradado de máscara: de opaco a transparente en la parte inferior */
+            -webkit-mask-image: linear-gradient(to bottom, black 72%, transparent 98%);
+                    mask-image: linear-gradient(to bottom, black 72%, transparent 98%);
+        }
+        
+        /* .auth-card:hover {
+            transform: translateY(-5px);
+        } */
+        
+        /* Definimos la animación */
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            margin: 0.75rem 0;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        /* Dashboard Mejorado */
+        .dashboard {
+            display: none;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem 0;
+        }
+
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 1rem;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-header {
+            position: relative;
+            height: 95px;
+            background: var(--gradient);
+        }
+
+        .course-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .course-content {
+            padding: 1.5rem;
+        }
+
+        .course-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.2rem;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            transform: skewX(-20deg);
+            transition: left 1s ease-in-out;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: var(--dark);
+            color: white;
+        }
+
+        /* Vista de Módulos */
+        .modules-view {
+            display: none;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .video-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .video-thumbnail {
+            height: 90px;
+            background: var(--gradient);
+            position: relative;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 35px;
+            height: 35px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .form-group {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-input {
+            width: 100%;
+            padding-right: 30px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            font-size: 22px;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-password:active {
+            transform: scale(0.9);
+        }
+
+        .progress-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .progress-bar {
+            height: 1px; /* Más delgada */
+            width: 50%;
+            transition: width 0.6s ease-in-out, background-color 0.6s ease-in-out;
+            border-radius: 2px;
+            max-width: 80%; /* Centrando la barra */
+        }
+      
+        /* Contenedor principal con los iconos a la derecha */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+    
+        .form-container {
+            flex-grow: 1;
+            min-width: 300px;
+        }
+    
+        /* Íconos en vertical SIEMPRE en la derecha */
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            margin-left: 20px;
+        }
+    
+        /* Estilos de los iconos */
+        .icon-sede {
+            width: 35px;
+            height: 42px;
+            transition: filter 0.3s ease-in-out;
+        }
+    
+        /* Efecto blanco y negro al pasar el cursor */
+        .icon-sede:hover {
+            filter: grayscale(100%);
+        }
+    
+        /* RESPONSIVIDAD: En teléfonos sigue en la derecha */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: row; /* Mantiene la alineación en horizontal */
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+    
+            .icon-container {
+                align-items: flex-end; /* Asegura que siempre esté en la derecha */
+            }
+        }
+    
+        /* Contenedor de los iconos alineado a la derecha */
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            margin-left: 20px;
+        }
+    
+        .icon-sede {
+            width: 35px;
+            height: 42px;
+            transition: filter 0.3s ease-in-out;
+            margin-left: 10px;  /* Espacio en el lado izquierdo */
+            margin-right: 10px; /* Espacio en el lado derecho */
+        }
+        
+    
+        /* Efecto blanco y negro al pasar el cursor */
+        .icon-sede:hover {
+            filter: grayscale(100%);
+        }
+    
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .icon-container {
+                align-items: center;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+    
+            .icon-sede {
+                width: 40px;
+                height: 40px;
+            }
+    
+            div[style*="display: flex; justify-content: space-between"] {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
+
+
+        /* modal de codigo */
+
+#accessModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(4 76 99);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+#accessModal.active {
+    visibility: visible;
+}
+
+#accessModal.show {
+    opacity: 1;
+}
+
+/* 🔵 Contenedor del modal */
+.modal-content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 25px;
+    max-width: 338px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    text-align: right; /* Alinea el texto a la derecha */
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* 🔵 Estilos para el texto dentro del modal */
+.modal-content p, 
+.modal-content h1, 
+.modal-content h2, 
+.modal-content h3, 
+.modal-content span {
+    font-size: 0.85rem; /* Reduce el tamaño del texto */
+    color: rgb(245, 245, 245); /* Cambia el color del texto a azul */
+}
+
+
+/* 🔵 Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔵 Icono con animación */
+.modal-icon {
+    font-size: 30px;
+    color: #00060a;
+    animation: glow 2s infinite alternate ease-in-out;
+    position: absolute;
+    left: 15px;
+    top: 7px;
+}
+
+
+/* 🔵 Animación de brillo */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px rgba(0, 195, 255, 0.5); }
+    100% { text-shadow: 0 0 20px rgba(0, 195, 255, 1); }
+}
+
+/* 🔵 Input con efecto */
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container input {
+    width: 57%;
+    padding: 10px;
+    border: none;
+    background:#074c62;
+    border-radius: 8px;
+    font-size: 10px;
+    color: #ffffff;
+    outline: none;
+    transition: transform 0.3sease, opacity 0.3sease;
+}
+.input-container input:focus {
+    transform: scale(1.01);
+    opacity: 0.8;
+}
+
+
+/* 🔵 Botones */
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.modal-buttons button {
+    width: 95px; /* Tamaño reducido */
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Botón de confirmar */
+#confirmAccess {
+    background: #acb0b1;
+    /* color: white; */
+    font-weight: bold;
+}
+
+#confirmAccess:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Botón de cancelar */
+#cancelAccess {
+    background: #ff4d4d;
+    /* color: white; */
+    font-weight: bold;
+}
+
+#cancelAccess:hover {
+    background: #dd0606;
+    transform: scale(1.05);
+}
+
+
+/* 🔵 Efecto de error */
+.input-error {
+    background: rgba(255, 0, 0, 0.3) !important;
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
+}
+
+/* 🔵 Responsivo */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 90%;
+    }
+    .modal-buttons {
+        flex-direction: column;
+    }
+}
